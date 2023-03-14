@@ -1,0 +1,22 @@
+import "./FastConfigs"
+default_platform(:android)
+
+platform :android do
+  desc "Build .apk artifact"
+  lane :build_artifact do
+    # manage_version()
+    build_config = get_build_config()
+    gradle(build_config)
+  end
+
+  desc "Distribute apk to firebase"
+  lane :distribute_to_firebase do
+     firebase_config = get_firebase_config()
+     firebase_app_distribution(firebase_config)
+  end
+
+  lane :manage_firebase_distribution do
+    build_artifact
+    distribute_to_firebase
+  end
+end

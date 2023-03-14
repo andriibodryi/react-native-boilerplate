@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BasicText should render correctly 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#4D4D4D",
+        "fontFamily": "Aspira-Regular",
+        "fontSize": 16,
+        "fontWeight": "400",
+        "lineHeight": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  basic text
+</Text>
+`;

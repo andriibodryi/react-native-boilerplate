@@ -1,0 +1,84 @@
+def unlock_the_keychain()
+    create_keychain(
+      name: ENV["KEYCHAIN_NAME"],
+      default_keychain: true,
+      unlock: true,
+      lock_when_sleeps: true,
+      add_to_search_list: true,
+      password: ENV["KEYCHAIN_PASSWORD"],
+      timeout: 3600,
+    )
+    unlock_keychain(
+      path: ENV["KEYCHAIN_NAME"],
+      password: ENV["KEYCHAIN_PASSWORD"],
+      add_to_search_list: true,
+    )
+
+    install_certificate("signing/#{ENV['DISTRIBUTION_CERTIFICATE_NAME']}", ENV['DISTRIBUTION_CERTIFICATE_PASSWORD'])
+end
+
+def install_profiles()
+  install_provisioning_profile(path: "signing/#{get_provision_filename()}")
+end
+
+def install_certificate(path, password)
+  UI.success "Installing certificate #{path}"
+  sh("security import ../#{path} -P #{password} -A -t cert -f pkcs12 -k ~/Library/Keychains/#{ENV["KEYCHAIN_NAME"]}", log: false)
+end
+
+def manage_signing()
+  if ENV['CI']
+    unlock_the_keychain()
+  else
+    install_profiles()
+  end
+
+  disable_automatic_code_signing
+end
+
+def manage_versioning()
+  increment_version_number(
+    version_number: ENV["BUILD_VERSION"] || prompt(text: "BUILD_VERSION (example: 1.0.0-RC.309.1): ")
+  )
+
+  increment_build_number(
+    build_number: ENV["CODE_VERSION"] || prompt(text: "CODE_VERSION (example: 309): ")
+  )
+end
+
+def get_ipa_filename()
+  return "#{ENV["APP_NAME"]}.ipa"
+end
+
+def get_provision_filename()
+    if ENV['ENVIRONMENT'] === 'QA'
+      return 'some_name.qa.mobileprovision'
+    end
+    if ENV['ENVIRONMENT'] === 'Prod'
+      return 'some_name.prod.mobileprovision'
+    end
+end
+
+def get_bundle_id()
+    if ENV['ENVIRONMENT'] === 'QA'
+      return 'com.***.**'
+    end
+    if ENV['ENVIRONMENT'] === 'Prod'
+      return 'com.***.**'
+    end
+end
+
+def get_provision_profile_name()
+    if ENV['ENVIRONMENT'] === 'QA'
+      return 'Copy this from xcode build settings - Provisioning profile QA'
+    end
+    if ENV['ENVIRONMENT'] === 'Prod'
+      return 'Copy this from xcode build settings - Provisioning profile PROD'
+    end
+end
+
+def get_firebase_groups()
+    if ENV['ENVIRONMENT'] === 'QA'
+      return 'QA, DEV'
+    end
+end

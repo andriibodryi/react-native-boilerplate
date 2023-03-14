@@ -1,0 +1,34 @@
+import "./FastlaneUtils"
+import "./FastlaneConfig"
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Install react and ios dependencies"
+  lane :install_dependencies do
+    UI.header "install_dependencies"
+    sh('yarn install')
+    sh('CI=1 yarn ios:install')
+  end
+
+  lane :build_artifact do
+    manage_signing()
+    manage_versioning()
+
+    build_config = get_build_config()
+
+    gym(build_config)
+  end
+
+  lane :distribute_to_firebase do
+    firebase_config = get_firebase_config()
+    firebase_app_distribution(firebase_config)
+  end
+
+  lane :manage_firebase_distribution do
+    install_dependencies
+
+    build_artifact
+    distribute_to_firebase
+  end
+end

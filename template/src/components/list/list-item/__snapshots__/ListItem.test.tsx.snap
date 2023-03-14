@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem should render list item correctly 1`] = `
+<View
+  accessible={false}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Object {
+        "overflow": "hidden",
+        "width": "100%",
+      },
+      Array [
+        Object {
+          "flex": 1,
+        },
+        undefined,
+      ],
+    ]
+  }
+  testID="list_item"
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "marginVertical": 8,
+            "paddingLeft": 8,
+          },
+          Object {
+            "flex": 1,
+            "justifyContent": "center",
+          },
+        ]
+      }
+    >
+      <View
+        accessible={false}
+      >
+        <Text
+          accessibilityHint="double tap to activate"
+          numberOfLines={1}
+          selectable={false}
+          style={
+            Array [
+              Object {
+                "color": "#4D4D4D",
+                "fontFamily": "Aspira-Regular",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "lineHeight": 20,
+              },
+              Array [
+                Object {
+                  "fontFamily": "Aspira-Medium",
+                  "fontSize": 16,
+                  "fontWeight": "500",
+                  "lineHeight": 20,
+                },
+                Object {
+                  "textAlign": "left",
+                },
+                Object {
+                  "color": "rgb(77, 77, 77)",
+                },
+                undefined,
+              ],
+            ]
+          }
+          testID="list_item_label"
+        >
+          list item title
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

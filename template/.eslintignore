@@ -1,0 +1,8 @@
+./node_modules
+dist
+__mocks__/*
+metro.config.js
+generate_analytics_files.js
+analytics/generate_firebase_analytics_files_react_native.js
+generate_firebase_analytics_files.js
+**/storybook/*

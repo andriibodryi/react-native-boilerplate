@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BottomTabNavigator component renders correctly 1`] = `
+<RootStack.Navigator
+  backBehavior="history"
+  screenOptions={
+    Object {
+      "headerShown": false,
+      "tabBarActiveTintColor": "#7f2b7b",
+      "tabBarInactiveTintColor": "#2C2C2C",
+      "tabBarStyle": Object {
+        "backgroundColor": "#ffffff",
+        "borderTopWidth": 2,
+        "shadowOffset": Object {
+          "height": 8,
+          "width": 0,
+        },
+        "shadowOpacity": 0.6,
+        "shadowRadius": 10,
+      },
+    }
+  }
+>
+  <RootStack.Screen
+    component={[Function]}
+    listeners={
+      Object {
+        "tabPress": [Function],
+      }
+    }
+    name="HomeTab"
+    options={
+      Object {
+        "tabBarAccessibilityLabel": "Home",
+        "tabBarIcon": [Function],
+        "tabBarLabel": [Function],
+        "tabBarTestID": "bottomNavigator.HomeButton",
+      }
+    }
+  />
+  <RootStack.Screen
+    component={[Function]}
+    listeners={
+      Object {
+        "tabPress": [Function],
+      }
+    }
+    name="AccountsTab"
+    options={
+      Object {
+        "tabBarAccessibilityLabel": "Accounts",
+        "tabBarIcon": [Function],
+        "tabBarLabel": [Function],
+        "tabBarTestID": "bottomNavigator.AccountsButton",
+      }
+    }
+  />
+  <RootStack.Screen
+    component={[Function]}
+    listeners={
+      Object {
+        "tabPress": [Function],
+      }
+    }
+    name="PaymentsTab"
+    options={
+      Object {
+        "tabBarAccessibilityLabel": "Payments",
+        "tabBarIcon": [Function],
+        "tabBarLabel": [Function],
+        "tabBarTestID": "bottomNavigator.PaymentsButton",
+      }
+    }
+  />
+  <RootStack.Screen
+    component={[Function]}
+    listeners={
+      Object {
+        "tabPress": [Function],
+      }
+    }
+    name="SettingsTab"
+    options={
+      Object {
+        "tabBarAccessibilityLabel": "Settings",
+        "tabBarIcon": [Function],
+        "tabBarLabel": [Function],
+        "tabBarTestID": "bottomNavigator.SettingsButton",
+      }
+    }
+  />
+</RootStack.Navigator>
+`;

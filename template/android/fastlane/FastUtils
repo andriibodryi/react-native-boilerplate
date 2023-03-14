@@ -1,0 +1,37 @@
+def open_folder_with_apk_artifact()
+  sh("open -R '.#{ENV['BUILD_FILE_PATH']}'")
+end
+
+def manage_version()
+  android_set_version_name(
+    version_name: ENV['BUILD_VERSION'] || prompt(text: "BUILD_VERSION (example: 1.0.0-RC.309.1): "),
+  )
+
+  android_set_version_code(
+    version_code: ENV['CODE_VERSION'] || prompt(text: "CODE_VERSION (example: 309): "),
+  )
+end
+
+def get_flavor()
+    if ENV['ENVIRONMENT'] === 'QA'
+      return 'Qa'
+    end
+    if ENV['ENVIRONMENT'] === 'Prod'
+       return 'Prod'
+    end
+end
+
+def get_apk_path()
+    if ENV['ENVIRONMENT'] === 'QA'
+      return './app/build/outputs/apk/qa/release/app-qa-release.apk'
+    end
+    if ENV['ENVIRONMENT'] === 'Prod'
+       return './app/build/outputs/apk/prod/release/app-prod-release.apk'
+    end
+end
+
+def get_firebase_groups()
+    if ENV['ENVIRONMENT'] === 'QA'
+      return 'QA, DEV'
+    end
+end

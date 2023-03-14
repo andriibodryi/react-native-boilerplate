@@ -1,0 +1,246 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text presets should accept buttonPrimary as preset 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#4D4D4D",
+        "fontFamily": "Aspira-Regular",
+        "fontSize": 16,
+        "fontWeight": "400",
+        "lineHeight": 20,
+      },
+      Array [
+        Object {
+          "fontFamily": "Aspira-Medium",
+          "fontSize": 12,
+          "fontWeight": "500",
+          "letterSpacing": 1.5,
+        },
+        Object {},
+        Object {
+          "color": "#4D4D4D",
+        },
+        undefined,
+      ],
+    ]
+  }
+>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+</Text>
+`;
+
+exports[`Text presets should accept buttonSecondary as preset 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#4D4D4D",
+        "fontFamily": "Aspira-Regular",
+        "fontSize": 16,
+        "fontWeight": "400",
+        "lineHeight": 20,
+      },
+      Array [
+        Object {
+          "fontFamily": "Aspira-Regular",
+          "fontSize": 14,
+          "fontWeight": "400",
+          "lineHeight": 18,
+        },
+        Object {},
+        Object {
+          "color": "#4D4D4D",
+        },
+        undefined,
+      ],
+    ]
+  }
+>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+</Text>
+`;
+
+exports[`Text presets should accept heading2 as preset 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#4D4D4D",
+        "fontFamily": "Aspira-Regular",
+        "fontSize": 16,
+        "fontWeight": "400",
+        "lineHeight": 20,
+      },
+      Array [
+        Object {
+          "color": "#4D4D4D",
+          "fontFamily": "Aspira-Medium",
+          "fontSize": 14,
+          "fontWeight": "500",
+        },
+        Object {},
+        Object {
+          "color": "#4D4D4D",
+        },
+        undefined,
+      ],
+    ]
+  }
+>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+</Text>
+`;
+
+exports[`Text presets should accept iconText as preset 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#4D4D4D",
+        "fontFamily": "Aspira-Regular",
+        "fontSize": 16,
+        "fontWeight": "400",
+        "lineHeight": 20,
+      },
+      Array [
+        Object {
+          "fontFamily": "Aspira-Demi",
+          "fontSize": 18,
+          "fontWeight": "500",
+          "lineHeight": 20,
+        },
+        Object {},
+        Object {
+          "color": "#4D4D4D",
+        },
+        undefined,
+      ],
+    ]
+  }
+>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+</Text>
+`;
+
+exports[`Text presets should accept no preset - defaults to textMdRegular 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#4D4D4D",
+        "fontFamily": "Aspira-Regular",
+        "fontSize": 16,
+        "fontWeight": "400",
+        "lineHeight": 20,
+      },
+      Array [
+        Object {
+          "fontFamily": "Aspira-Regular",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "lineHeight": 20,
+        },
+        Object {},
+        Object {
+          "color": "#4D4D4D",
+        },
+        undefined,
+      ],
+    ]
+  }
+>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+</Text>
+`;
+
+exports[`Text presets should accept tabText as preset 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#4D4D4D",
+        "fontFamily": "Aspira-Regular",
+        "fontSize": 16,
+        "fontWeight": "400",
+        "lineHeight": 20,
+      },
+      Array [
+        Object {
+          "fontFamily": "Aspira-Medium",
+          "fontSize": 14,
+          "fontWeight": "500",
+        },
+        Object {},
+        Object {
+          "color": "#4D4D4D",
+        },
+        undefined,
+      ],
+    ]
+  }
+>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+</Text>
+`;
+
+exports[`Text presets should be resilient to invalid presets 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#4D4D4D",
+        "fontFamily": "Aspira-Regular",
+        "fontSize": 16,
+        "fontWeight": "400",
+        "lineHeight": 20,
+      },
+      Array [
+        Object {
+          "fontFamily": "Aspira-Medium",
+          "fontSize": 16,
+          "fontWeight": "500",
+          "lineHeight": 20,
+        },
+        Object {},
+        Object {
+          "color": "#4D4D4D",
+        },
+        undefined,
+      ],
+    ]
+  }
+>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+</Text>
+`;
+
+exports[`Text should render correctly when passing no props 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#4D4D4D",
+        "fontFamily": "Aspira-Regular",
+        "fontSize": 16,
+        "fontWeight": "400",
+        "lineHeight": 20,
+      },
+      Array [
+        Object {
+          "fontFamily": "Aspira-Regular",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "lineHeight": 20,
+        },
+        Object {},
+        Object {
+          "color": "#4D4D4D",
+        },
+        undefined,
+      ],
+    ]
+  }
+/>
+`;

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonText should render correctly 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "color": "#4D4D4D",
+        "fontFamily": "Aspira-Regular",
+        "fontSize": 16,
+        "fontWeight": "400",
+        "lineHeight": 20,
+      },
+      Array [
+        Object {
+          "fontFamily": "Aspira-Medium",
+          "fontSize": 22,
+          "fontWeight": "500",
+          "lineHeight": 26,
+        },
+        Object {
+          "color": "#4D4D4D",
+        },
+        undefined,
+      ],
+    ]
+  }
+>
+  basic text
+</Text>
+`;

@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorLabel should render correctly 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+      "marginBottom": 16,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "color": "#4D4D4D",
+          "justifyContent": "center",
+        },
+        Object {
+          "borderRadius": 8,
+          "height": 16,
+          "width": 16,
+        },
+        false,
+        Array [
+          Object {
+            "borderWidth": 1,
+          },
+          Object {
+            "borderColor": "#E32837",
+          },
+        ],
+        Object {
+          "backgroundColor": "#FFFFFF",
+        },
+      ]
+    }
+  >
+    <View>
+      <SvgMock
+        fill="#E32837"
+        height={12}
+        width={12}
+      />
+    </View>
+  </View>
+  <Text
+    accessibilityLabel="Dummy Message"
+    accessibilityRole="alert"
+    style={
+      Array [
+        Object {
+          "color": "#4D4D4D",
+          "fontFamily": "Aspira-Regular",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "lineHeight": 20,
+        },
+        Array [
+          Object {
+            "fontFamily": "Aspira-Regular",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "lineHeight": 16,
+          },
+          Object {},
+          Object {
+            "color": "#4D4D4D",
+          },
+          Array [
+            Object {
+              "flexBasis": "85%",
+              "marginLeft": 6,
+            },
+            Object {
+              "color": "#E32837",
+            },
+          ],
+        ],
+      ]
+    }
+  >
+    Dummy Message
+  </Text>
+</View>
+`;

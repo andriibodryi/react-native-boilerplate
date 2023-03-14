@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Screen should render fixed screen 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "flex": 1,
+          "height": "100%",
+        },
+        Object {
+          "backgroundColor": "#FFFFFF",
+        },
+      ],
+      Object {
+        "paddingBottom": 0,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "stretch",
+          "height": "100%",
+          "justifyContent": "flex-start",
+          "width": "100%",
+        },
+        Object {},
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`Screen should render scrollable screen 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "flex": 1,
+      },
+      Object {
+        "backgroundColor": "#FFFFFF",
+      },
+    ]
+  }
+>
+  Test child
+</View>
+`;
